@@ -1124,6 +1124,16 @@ select#website-select{
       padding: 0;
     }
 
+    .prev, .next{
+      width: 25px;
+      height: 25px;
+      font-size: 10px;
+    }
+
+    .mySlides, .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
+      width: 60%;
+    }
+
     .right-content-desc{
       margin-top: 0px;
       min-height: 50vh;
