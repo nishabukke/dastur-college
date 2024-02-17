@@ -121,8 +121,9 @@ select#website-select{
 }
 
 .upper-right-header a:hover{
-    color: #ffc600;
-    background-color: #00237d;
+  color: #00237d;
+  background-color: #fff;
+  text-decoration: none;
 }
 
 .logo img{
