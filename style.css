@@ -873,6 +873,74 @@ overflow: hidden;
   }
   
 
+  @media screen and (max-width:768px) {
+    .upper-header, .lower-header{
+        display: none;
+    }
+
+    .mobile-header{
+        display: block;
+    }
+    
+    p, .about-desc p, .principal-desc p{
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    .banner-inner-content h1 {
+      font-size: 26px;
+    }
+
+    .about-content, .principal-content, .cards-content{
+      padding: 50px 30px;
+    }
+
+    .about-content .row{
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+
+    .card{
+      min-height: 330px;
+    }
+
+    .cards-icon img{
+      width: 90px;
+    }
+
+    .panel-body{
+      font-size: 13px;
+      min-height: 200px;
+    }
+
+    .panel-heading{
+      height: 25px;
+    }
+    
+    .panel-button{
+      padding: 10px;
+    }
+
+    .footer-links h4 {
+      margin-bottom: 10px;
+  }
+
+  .footer-inner .container{
+    padding: 0px 15px;
+  }
+
+  .footer-inner .row{
+    gap: 20px;
+  }
+    
+    .lower-footer{
+      flex-direction: column;
+      gap: 10px;
+      font-size: 12px;
+    }
+  }
+
+
   @media screen and (max-width:450px) {
     .upper-header, .lower-header{
         display: none;

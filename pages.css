@@ -733,7 +733,7 @@ select#website-select{
   }
   
   .header #month {
-    color: #ff5252;
+    color: #073e7d;
     font-size: 30px;
     font-weight: 600;
   }
@@ -1066,7 +1066,127 @@ select#website-select{
         transform: translateZ(0);
     }
   }
+ 
   
+  @media screen and (max-width:768px) {
+    .upper-header, .lower-header{
+        display: none;
+    }
+
+    .mobile-header{
+        display: block;
+    }
+    
+    p, .about-desc p, .principal-desc p, .right-pages-content p{
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    .banner-inner-content h1 {
+      font-size: 26px;
+    }
+
+    .about-content, .principal-content, .cards-content, .right-pages-content, .gallery-content, .contact-section{
+      padding: 50px 40px;
+    }
+
+    .event-content{
+      padding: 50px 30px;
+    }
+
+    .container{
+      padding: 0;
+    }
+
+    .about-content .row{
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+
+    .pages-banner{
+      padding: 50px 0px;
+    }
+
+    .common-heading{
+      font-size: 28px;
+    }
+
+    .pages-content-inner {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .left-pages-content {
+      padding: 50px;
+    }
+
+    .photos-group{
+      padding: 0;
+    }
+
+    .prev, .next{
+      width: 25px;
+      height: 25px;
+      font-size: 10px;
+    }
+
+    .mySlides, .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
+      width: 60%;
+    }
+
+    .right-content-desc{
+      margin-top: 0px;
+      min-height: 50vh;
+    }
+
+    .right-content-desc ul {
+      padding: 0px;
+    }
+
+    .right-content-desc ul li{
+      font-size: 14px;
+    }
+
+    .gallery-photo-group, .contact-section-inner{
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .event-calender .row{
+      gap: 20px;
+    }
+
+    .header #month{
+      font-size: 24px;
+    }
+
+    .header button, .day{
+      width: 40px;
+      height: 40px;
+    }
+
+    .weekdays{
+      font-size: 11px;
+    }
+
+    .footer-links h4 {
+      margin-bottom: 10px;
+  }
+
+  .footer-inner .row{
+    gap: 20px;
+  }
+
+  .footer-inner .container{
+    padding: 0px 15px;
+  }
+    
+    .lower-footer{
+      flex-direction: column;
+      gap: 10px;
+      font-size: 12px;
+    }
+  }
+
 
   @media screen and (max-width:450px) {
     .upper-header, .lower-header{
