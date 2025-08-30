@@ -237,10 +237,10 @@ select#website-select{
       padding: 10px 15px 10px 15px;
       border-bottom: 1px solid #f2f2f2;
       width: 100%;
-    }
-  
+      
     ul.nav li .dropdown li:last-child{
       border-bottom: none;
+    }
     }
     
     ul.nav li .dropdown a{
