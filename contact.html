@@ -3,418 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="pages.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>Sardar Dastur Hormazdiar Junior College</title>
 </head>
 <body>
     
-    <header id="header">
-        <div class="upper-header">
-            <div class="logo">
-                <img src="images/logo.png" alt="">
-                <span>Sardar Dastur Hormazdiar Junior College</span>
-            </div>
-            <div class="upper-right-header">
-                <select name="websites" id="website-select">
-                    <option value="">--Other School Website--</option>
-                    <option value="trust"><a href="#">Sardar Dastur Schools Trust</a></option>
-                    <option value="primary"><a href="#">Bai Najamai Nosherwan Dastur Primary & Nursery School</a></option>
-                    <option value="boys"><a href="#">The Sardar Dastur Hoshang Boys' School</a></option>
-                    <option value="coed"><a href="#">Sardar Dastur Hormazdiar High School</a></option>
-                    <option value="girls"><a href="#">The Sardar Dastur Nosherwan Girls' High School</a></option>
-                    <option value="jr-college"><a href="#">Sardar Dastur Hormazdiar Junior College</a></option>
-                </select>
-                <a href="#">Online Payment</a>
-            </div>
-        </div>
-        <div class="lower-header">
+    <header>
+        <div id="header">
+            <div class="upper-header">
+                <div class="container-fluid">
+                    <div class="left-upper-header">
+                        <a href="mailto:sdhjc@dasturcollege.org"><span class="fas fa-envelope"></span>sdhjc@dasturcollege.org</a>
+                        <a href="tel:02026362635"><span class="fas fa-phone"></span>(020) 2636 2635 / 702 </a>
+                    </div>
+                    <div class="middle-upper-header">
+                      <select name="websites" id="website-select">
+                          <option value="">--Other School Website--</option>
+                          <option value="trust"><a target="_blank" href="https://nishabukke.github.io/dastur-trust/">Sardar Dastur Schools Trust</a></option>
+                          <option value="primary"><a target="_blank" href="https://nishabukke.github.io/Dastur_Primary/">Bai Najamai Nosherwan Dastur Primary & Nursery School</a></option>
+                          <option value="boys"><a target="_blank" href="https://nishabukke.github.io/dastur-boys/">The Sardar Dastur Hoshang Boys' School</a></option>
+                          <option value="coed"><a target="_blank" href="https://nishabukke.github.io/dastur-coed-demo2/">Sardar Dastur Hormazdiar High School</a></option>
+                          <option value="girls"><a target="_blank" href="https://nishabukke.github.io/dastur-girls/">The Sardar Dastur Nosherwan Girls' High School</a></option>
+                          <option value="jr-college"><a target="_blank" href="https://nishabukke.github.io/dastur-college/">Sardar Dastur Hormazdiar Junior College</a></option>
+                      </select>
+                    </div>
+                    <div class="right-upper-header">
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="gallery.html">Gallery</a>
+                        <a href="#" class="payment-btn"> Online Payment</a>
+                    </div>
+                </div>
+            </div>      
+            <div class="lower-header sticky-wrapper" id="sticky-wrapper">
+                <div class="sticky-area">
+                <div class="container-fluid">
+            <a href="index.html" class="logo">
+              <img src="images/logo.png" alt="logo img">
+              <h1 class="school-name">The Sardar Dastur Hormazdiar <br> Junior College</h1>
+            </a>
             <div class="navigation">
-                <ul class="nav navbar-nav">
-                    <li class="nav-li"><a href="index.html">Home</a></li>
-                    <li class="nav-li"><a href="#" class="about">About Us  </a>
-                      <div class="dropdown">
-                          <ul>
-                              <li><a href="college-history.html"><span class="fas fa-arrow-right"></span>College History</a></li>
-                              <li><a href="principal-desk.html"><span class="fas fa-arrow-right"></span>Principal's Desk</a></li>
-                              <li><a href="vision.html"><span class="fas fa-arrow-right"></span>Our Vision</a></li>
-                              <li><a href="mission.html"><span class="fas fa-arrow-right"></span>Our Mission</a></li>
-                              <li><a href="motto.html"><span class="fas fa-arrow-right"></span>Our Motto</a></li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li class="nav-li"><a href="#" class="general-info">General Info </span>
-                      </a>
-                      <div class="dropdown">
-                          <ul>
-                              <li><a href="#"><span class="fas fa-arrow-right"></span>College Hours</a></li>
-                              <li><a href="#"><span class="fas fa-arrow-right"></span>Parent Teacher Association</a></li>
-                              <li><a href="#"><span class="fas fa-arrow-right"></span>Internal Complaints Committee</a></li>
-                              <li><a href="#"><span class="fas fa-arrow-right"></span>Charity</a></li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li class="nav-li"><a href="#" class="infrastructure">Infrastructure & Facilities </span>
-                      </a>
-                      <div class="dropdown">
-                          <ul>
-                              <li><a href="#"><span class="fas fa-arrow-right"></span>Infrastructure</a></li>
-                              <li><a href="#"><span class="fas fa-arrow-right"></span>Laboratories</a></li>
-                              <li><a href="#"><span class="fas fa-arrow-right"></span>Library</a></li>
-                              <li><a href="#"><span class="fas fa-arrow-right"></span>Facilities</a></li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li class="nav-li"><a href="#" class="rules">Rules </span>
-                    </a>
+              <ul class="nav navbar-nav">
+                  <li class="nav-li"><a href="index.html">Home</a></li>
+                  <li class="nav-li"><a href="#">About Us  </a>
                     <div class="dropdown">
                         <ul>
-                            <li><a href="#"><span class="fas fa-arrow-right"></span>General Rules</a></li>
-                            <li><a href="#"><span class="fas fa-arrow-right"></span>Leave of Absence</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="nav-li"><a href="#" class="academics">Academics </span>
-                    </a>
-                    <div class="dropdown">
-                        <ul>
-                            <li><a href="#"><span class="fas fa-arrow-right"></span>Streams</a></li>
-                            <li><a href="#"><span class="fas fa-arrow-right"></span>Qualifying Examination</a></li>
-                            <li><a href="#"><span class="fas fa-arrow-right"></span>Academic Calender</a></li>
-                            <li><a href="#"><span class="fas fa-arrow-right"></span>Examination Pattern for Std.XI</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="principal-desk.html">Principal's Desk</a></li>
                         </ul>
                       </div>
                   </li>
-                  <li class="nav-li"><a href="#" class="co-curricular">Admission</a></li>
-                  <li class="nav-li"><a href="#" class="co-curricular">Co-curricular</a></li>
-                    <li class="nav-li"><a href="gallery.html" class="gallery">Gallery</a></li>
-                    <li class="nav-li"><a href="events.html" class="events active">Events</a></li>
-                    <li class="nav-li"><a href="#" class="careers">Careers</a></li>
-                    <li class="nav-li"><a href="contact.html" class="contact">Contact Us</a></li>
-                  </ul>
-            </div>
-        </div>
-
-        <!-- mobile header -->
-    <div class="mobile-header">
-        <div class="mobile-logo">
-            <img src="images/logo.png" alt="">
-        </div>
-        <div class="menu_side_wrap">
-            <div class="menu_side_inner">
-                <a class="menu_mobile_button menu_mobile_button_text" onclick="openNav()">☰</a>
-            </div>
-        </div>
-        <div class="menu_mobile_overlay" id="menu_mobile_overlay"></div>
-        <div class="menu_mobile" id="menu_mobile">
-            <div class="menu_mobile_inner">
-                <a class="menu_mobile_close icon-cancel" id="icon-cancel" onclick="closeNav()"></a>
-                <div class="accordion-nav">
-                    <div class="accordion-item">
-                        <div class="accordion-title gallery">
-                            <a href="index.html">home</a>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-title">
-                            About Us
-                        </div>
-                        <div class="accordion-content">
-                            <ul>
-                                <li><a href="college-history.html">College History</a></li>
-                              <li><a href="principal-desk.html">Principal's Desk</a></li>
-                              <li><a href="vision.html">Our VIsion</a></li>
-                              <li><a href="mission.html">Our Mission</a></li>
-                              <li><a href="motto.html">Our Motto</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-title">
-                            General Info
-                        </div>
-                        <div class="accordion-content">
-                            <ul>
-                                <li><a href="#">College Hours</a></li>
-                                <li><a href="#">Parent Teacher Association</a></li>
-                                <li><a href="#">Internal Complaints Committee</a></li>
-                                <li><a href="#">Charity</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-title">
-                            Infrastructure & Facilities 
-                        </div>
-                        <div class="accordion-content">
-                            <ul>
-                                <li><a href="#">Infrastructure</a></li>
-                              <li><a href="#">Laboratories</a></li>
-                              <li><a href="#">Library</a></li>
-                              <li><a href="#">Facilities</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-title">
-                            Rules
-                        </div>
-                        <div class="accordion-content">
-                            <ul>
-                                <li><a href="#">General Rules</a></li>
-                            <li><a href="#">Leave of Absence</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-title">
-                            Academics
-                        </div>
-                        <div class="accordion-content">
-                            <ul>
-                                <li><a href="#">Streams</a></li>
+                  <li class="nav-li"><a href="#">General Info</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Parents Teachers Association(PTA)</a></li>
+                            <li><a href="#">Internal Complaints Commitee</a></li>
+                            <li><a href="#">Charity</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-li"><a href="#">Rules & Facilities</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">General Rules</a></li>
+                            <li><a href="#">Infrastructure</a></li>
+                            <li><a href="#">Facilities</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li><a href="#">Labs</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-li"><a href="#">Courses</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">General Science</a></li>
+                            <li><a href="#">Commerce</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-li"><a href="#">Academics</a>
+                    <div class="dropdown">
+                        <ul>
                             <li><a href="#">Qualifying Examination</a></li>
-                            <li><a href="#">Academic Calender</a></li>
-                            <li><a href="#">Examination Pattern for Std.XI</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-title">
-                            Admission
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-title">
-                            Co-curricular
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-title gallery">
-                            <a href="gallery.html">Gallery</a>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-title gallery">
-                            <a href="events.html">Events</a>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-title gallery">
-                            <a href="#">Careers</a>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-title gallery">
-                            <a href="contact.html">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
+                            <li><a href="#">Examination Pattern for XI</a></li>
+                            <li><a href="#">Co-curricular</a></li>
+                            <li><a href="#">Admission</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="nav-li"><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
             </div>
-        </div>
-    </div>
+                </div>
+                </div>
+            </div>  
+      </div>
     </header>
 
+    <div class="mobile-header">
+      <div class="mobile-menu-container">
+          <div class="logo">
+              <a href="index.html"><img src="images/logo.png" alt=""></a>
+          </div>
+          <div class="mobile-menu">
+              <a class="canva_expander nav-menu-link menu-button" href="#">
+                  <span class="dot1"></span>
+                  <span class="dot2"></span>  
+                  <span class="dot3"></span>
+                  <span class="dot4"></span>
+              </a>
+              <button class="cross">&#735;</button>
+          <div class="menu">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#" class="nav__submenu">About <i class="fas fa-chevron-right"></i>
+                    <ul class="nav__sub">
+                        <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="principal-desk.html">Principal's Desk</a>
+                        </li>
+                    </ul>
+                    </a>
+                  </li>
+                  <li><a href="#" class="nav__submenu">General Info <i class="fas fa-chevron-right"></i>
+                    <ul class="nav__sub">
+                        <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="#">Parents Teacher Association (PTA)</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="#">Internal Complaints Commitee</a>
+                        </li>
+                        <li class="nav__item">
+                        <a class="nav__link" href="#">Charity</a>
+                        </li>
+                    </ul>
+                    </a>
+                  </li>
+              <li>
+                  <a href="#" class="nav__submenu">Rules & Facilities <i class="fas fa-chevron-right"></i>
+                      <ul class="nav__sub">
+                          <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                          <li class="nav__item">
+                          <a class="nav__link" href="#">General Rules</a>
+                          </li>
+                          <li class="nav__item">
+                          <a class="nav__link" href="#">Infrastructure</a>
+                          </li>
+                          <li class="nav__item">
+                          <a class="nav__link" href="#">Facilities</a>
+                          </li>
+                          <li class="nav__item">
+                          <a class="nav__link" href="#">Library</a>
+                          </li>
+                          <li class="nav__item">
+                          <a class="nav__link" href="#">Labs</a>
+                          </li>
+                      </ul>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="nav__submenu">Courses <i class="fas fa-chevron-right"></i>
+                      <ul class="nav__sub">
+                          <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                          <li class="nav__item">
+                          <a class="nav__link" href="#">General Science</a>
+                          </li>
+                          <li class="nav__item">
+                          <a class="nav__link" href="#">Commerce</a>
+                          </li>
+                      </ul>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="nav__submenu">Academics <i class="fas fa-chevron-right"></i>
+                      <ul class="nav__sub">
+                          <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                          <li class="nav__item">
+                          <a class="nav__link" href="#">Qualifying Examination</a>
+                          </li>
+                          <li class="nav__item">
+                          <a class="nav__link" href="#">Examination Pattern for XI</a>
+                          </li>
+                          <li class="nav__item">
+                          <a class="nav__link" href="#">Co-curricular</a>
+                          </li>
+                          <li class="nav__item">
+                          <a class="nav__link" href="#">Admission</a>
+                          </li>
+                      </ul>
+                  </a>
+              </li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+          </div> 
+          </div>
+      </div>
+    </div>
 
     <main class="site-content">
         <div class="pages-banner">
             <div class="pages-inner container">
                 <h2 class="common-heading text-center m-0">Contact Us</h2>
+                <div class="pages-banner-overlay"></div>
             </div>
         </div>
 
-        <div class="contact-section">
-            <div class="container">
+        <section class="contact-section container section-lg">
                 <div class="contact-section-inner">
                     <div class="left-contact-section">
-                        <h3>Contact Us</h3>
-                        <hr>
-                        <p><span>Address :</span> 1, Lt. Col. Tarapore Road, Camp, Pune – 411 001</p>
-                        <p><span>Email :</span> sdjrcollege@rediffmail.com</p>
-                        <p><span>Phone :</span> (020) 2636 2635 / 702 </p>
+                        <div class="common-heading">
+                            <h2>Contact Us</h2>
+                            <hr>
+                        </div>
+                        <p><span>Address :</span> <a href="https://maps.app.goo.gl/1LiVGQM4bAjVXFJQ6">1 Lt. Col. Tarapore Rd. Camp, Pune, Maharashtra 411001</a></p>
+                        <p><span>Email :</span> <a href="mailto:sdhjc@dasturcollege.org">sdhjc@dasturcollege.org</a></p>
+                        <p><span>Phone :</span> <a href="tel:02026362635">(020) 2636 2635 / 702</a> </p>
                     </div>
                     <div class="right-contact-section">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.177193291862!2d73.87472167423739!3d18.520893169166325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c050088e28f7%3A0x93e136936dcec09b!2sSardar%20Dastur%20Hormazdiar%20Junior%20College!5e0!3m2!1sen!2sin!4v1708163411699!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-            </div>
-        </div>
+        </section>
     </main>
 
-
-
-    
-    <footer id="footer">
-        <div class="footer-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="footer-links">
-                            <h4>About Us</h4>
-                            <ul>
-                                <li><span class="fas fa-phone"></span> (020) 2636 2635 / 702</li>
-                                <li><span class="fas fa-envelope"></span>  sdjrcollege@rediffmail.com</li>
-                                <li><span class="fas fa-location"></span>  1, Lt. Col. Tarapore Road, Camp, Pune – 411 001</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="footer-links">
-                            <h4>Quick Link</h4>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="principal-desk.html">Principal's Desk</a></li>
-                                <li><a href="motto.html">Our Motto</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="footer-links">
-                            <h4>Useful Links</h4>
-                            <ul>
-                                <li><a href="events.html">Events</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="footer-links">
-                            <h4>College Time</h4>
-                            <ul>
-                                <li>Mon - Thus : 08:00 - 13:00</li>
-                                <li>Fri - Sat : 08:00 - 12:00</li>
-                                <li>Sunday : Close</li>
-                                <li><a href="contact.html" class="common-btn">Contact Us</a></li>
-                            </ul>
-                        </div>
+    <footer id="footer" class="section-lg pb-0">
+        <div class="footer-inner container">
+                <div class="footer-links">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="">
+                        <ul>
+                        <li>Our school is a recognised Secondary School and admits girls without distinction of caste and creed.</li>
+                    </ul>
                     </div>
                 </div>
-                <div class="lower-footer">
-                    <p>Copyright 2016 Sardar Dastur School. All Rights Reserved.</p>
-                    <p>Designed and Developed by Nspiresoft</p>
+                <div class="footer-links">
+                    <h5>Useful Links</h5>
+                    <hr>
+                    <ul class="useful-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">School History</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
                 </div>
-            </div>
+                <div class="footer-links">
+                    <h5>Contact Us</h5>
+                    <hr>
+                    <ul>
+                        <li><a href="https://maps.app.goo.gl/1LiVGQM4bAjVXFJQ6">1 Lt. Col. Tarapore Rd. Camp, Pune, Maharashtra 411001</a></li>
+                        <li><a href="tel:02026362635">020-2636 2635, Ext.: 702</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5>College Timings</h5>
+                    <hr>
+                    <ul class="useful-links">
+                        <li>College Hours : 8.30AM to 3.00PM</li>
+                        <li>Office Hours : 8.30AM to 4.30PM</li>
+                        <li>Visiting Hours : 10.30AM to 11.30AM</li>
+                        <li><a href="contact.html" class="payment-btn">Contact Us</a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="lower-footer container">
+                <div class="lower-footer-links">
+                    <p>Copyright © 2025 Sardar Dastur Trust. All Rights Reserved.</p>
+                    <p>Designed & Developed by Nspiresoft LLP</p>
+                </div>
         </div>
     </footer>
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
-    
-     <!-- The Modal/Lightbox -->
-     <div id="myModal1" class="modal1">
-        <span class="close cursor" onclick="closeModal('myModal1')">&times;</span>
-        <div class="modal-content">
-            <a class="prev" onclick="plusSlides(-1,'mySlides1')"><span>&#10094;</span></a>
-            <div class="mySlides1">
-                <img src="images/posco1.jpg" >
-                <p class="modal-p">POSCO Seminar</p>
-            </div>
-        
-            <div class="mySlides1">
-                <img src="images/posco2.jpg" >
-                <p class="modal-p">POSCO Seminar</p>
-            </div>
-        
-        <!-- Next/previous controls -->
-        <a class="next" onclick="plusSlides(1,'mySlides1')"><span>&#10095;</span></a>
-        </div>
-    </div>
-
-    <div id="myModal2" class="modal2">
-        <span class="close cursor" onclick="closeModal('myModal2')">&times;</span>
-        <div class="modal-content">
-            <a class="prev" onclick="plusSlides(-1,'mySlides2')"><span>&#10094;</span></a>
-            <div class="mySlides2">
-                <img src="images/pnb1.jpg" >
-                <p class="modal-p">PNB Bank Visit</p>
-            </div>
-        
-            <div class="mySlides2">
-                <img src="images/pnb2.jpg" >
-                <p class="modal-p">PNB Bank Visit</p>
-            </div>
-        
-            <div class="mySlides2">
-                <img src="images/pnb3.jpg" >
-                <p class="modal-p">PNB Bank Visit</p>
-            </div>
-        
-        <!-- Next/previous controls -->
-        <a class="next" onclick="plusSlides(1,'mySlides2')"><span>&#10095;</span></a>
-        </div>
-    </div>
-
-    <div id="myModal3" class="modal3">
-        <span class="close cursor" onclick="closeModal('myModal3')">&times;</span>
-        <div class="modal-content">
-            <a class="prev" onclick="plusSlides(-1,'mySlides3')"><span>&#10094;</span></a>
-            <div class="mySlides3">
-                <img src="images/dahi-handi1.jpg" >
-                <p class="modal-p">Dahi Handi</p>
-            </div>
-            <div class="mySlides3">
-                <img src="images/dahi-handi2.jpg" >
-                <p class="modal-p">Dahi Handi</p>
-            </div>
-            <div class="mySlides3">
-                <img src="images/dahi-handi3.jpg" >
-                <p class="modal-p">Dahi Handi</p>
-            </div>
-        
-        <!-- Next/previous controls -->
-        <a class="next" onclick="plusSlides(1,'mySlides3')"><span>&#10095;</span></a>
-        </div>
-    </div>
-
-    <div id="myModal4" class="modal4">
-        <span class="close cursor" onclick="closeModal('myModal4')">&times;</span>
-        <div class="modal-content">
-            <a class="prev" onclick="plusSlides(-1,'mySlides4')"><span>&#10094;</span></a>
-            <div class="mySlides4">
-                <img src="images/fhsc1.jpg" >
-                <p class="modal-p">Felicitation of HSC Board Rankers</p>
-            </div>
-            <div class="mySlides4">
-                <img src="images/fhsc2.jpg" >
-                <p class="modal-p">Felicitation of HSC Board Rankers</p>
-            </div>
-            <div class="mySlides4">
-                <img src="images/fhsc3.jpg" >
-                <p class="modal-p">Felicitation of HSC Board Rankers</p>
-            </div>
-            <div class="mySlides4">
-                <img src="images/fhsc4.jpg" >
-                <p class="modal-p">Felicitation of HSC Board Rankers</p>
-            </div>
-        
-        <!-- Next/previous controls -->
-        <a class="next" onclick="plusSlides(1,'mySlides4')"><span>&#10095;</span></a>
-        </div>
-    </div>
-
-    <div id="myModal5" class="modal5">
-        <span class="close cursor" onclick="closeModal('myModal5')">&times;</span>
-        <div class="modal-content">
-            <a class="prev" onclick="plusSlides(-1,'mySlides5')"><span>&#10094;</span></a>
-            <div class="mySlides5">
-                <img src="images/ic1.jpg" >
-                <p class="modal-p">Investiture Ceremony</p>
-            </div>
-            <div class="mySlides5">
-                <img src="images/ic2.jpg" >
-                <p class="modal-p">Investiture Ceremony</p>
-            </div>
-        
-        <!-- Next/previous controls -->
-        <a class="next" onclick="plusSlides(1,'mySlides5')"><span>&#10095;</span></a>
-        </div>
-    </div>
 </body>
 </html>
