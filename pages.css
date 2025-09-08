@@ -159,7 +159,7 @@ select#website-select{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 10px;
 }
 
 .lower-header img{
@@ -503,197 +503,61 @@ select#website-select{
 
 /* gallery page css end */
 
-/* event page css start */
-
-.event-content{
-    position: relative;
-  }
+/* calender page css start */
+.calendar-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      overflow-x: auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .calendar-table th, .calendar-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    .calendar-table th {
+      background: #085291;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .calendar-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    .calendar-table tr:hover {
+      background: #e6f0fa;
+    }
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .calendar-table, .calendar-table thead, .calendar-table tbody, .calendar-table th, .calendar-table td, .calendar-table tr {
+        display: block;
+        width: 100%;
+      }
+      .calendar-table thead {
+        display: none;
+      }
+      .calendar-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        background: #fff;
+        padding: 10px;
+      }
+      .calendar-table td {
+        text-align: left;
+        padding-left: 50%;
+        position: relative;
+      }
+      .calendar-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        font-weight: bold;
+        color: #085291;
+      }
+    }
   
-  .header {
-    padding: 10px 0px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .header #month {
-    color: #085291;
-    font-size: 30px;
-    font-weight: 600;
-  }
-  
-  .header button {
-    width: 75px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    padding: 5px;
-    border-radius: 3px;
-    color: white;
-  }
-  
-  .header button {
-    background-color: #085291;
-  }
-  .weekdays {
-    width: 100%;
-    display: flex;
-    background-color: #2f3640;
-    font-size: 17px;
-    color: #fff;
-    font-weight: 500;
-  }
-  
-  .weekdays div {
-    width: 100px;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  #calendar {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .day {
-    width: 54px;
-    height: 50px;
-    padding: 15px;
-    cursor: pointer;
-    margin: 5px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 3px #cbd4c2;
-    color: #7f8fa6;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .day:hover {
-    background-color: rgba(112, 111, 211, 0.1);
-    color: #706fd3;
-  }
-  
-  #currentDay {
-    background-color: #706fd3;
-    color: #fff;
-  }
-  
-  .event {
-    font-size: 10px;
-    padding: 3px;
-    background-color: #3d3d3d;
-    color: #fff;
-    border-radius: 5px;
-    max-height: 55px;
-    overflow: hidden;
-  }
-  
-  .event.holiday {
-    background-color: palegreen;
-    color: #3d3d3d;
-  }
-  
-  .plain {
-    cursor: default;
-    box-shadow: none;
-  }
-  
-  #modal {
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 10;
-  }
-  
-  #addEvent,
-  #viewEvent {
-    display: none;
-    width: 350px;
-    background-color: #fff;
-    padding: 25px;
-    border: 1px solid #085291;
-    position: absolute;
-    z-index: 20;
-  }
-  
-  #addEvent h2,
-  #viewEvent h2 {
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-  
-  #txtTitle {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 25px;
-    border-radius: 3px;
-    outline: none;
-    border: 1px solid #cbd4c2;
-    font-size: 16px;
-  }
-  
-  #btnSave {
-    background-color: #2ed573;
-    padding: 10px 15px;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .btnClose {
-    background-color: #2f3542;
-    padding: 10px 15px;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  #viewEvent p {
-    margin-bottom: 20px;
-  }
-  
-  #btnDelete {
-    background-color: #ea2027;
-    padding: 10px 15px;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .error {
-    border-color: #ea2027 !important;
-    padding: 10px 15px;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .event-desc{
-    border: 1px solid #d1d1d1;
-    overflow: hidden;
-    padding: 40px 30px 30px;
-    min-height: 400px;
-  }
-  
-  .event-desc h3{
-    font-size: 20px;
-    margin: 0 0 20px;
-    padding: 0 0 15px;
-    border-bottom: 1px solid #d1d1d1;
-  }
-  
-  .event-desc ul li span{
-    font-size: 16px;
-    color: #555;
-    margin-right: 10px;
-  }
-  
-/* event page css end */
+/* calender page css end */
 
 
 /* contact section inner css start */
