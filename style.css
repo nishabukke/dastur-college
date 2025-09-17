@@ -981,7 +981,7 @@ select#website-select{
       font-size: 28px;
     }
 
-    .about-inner, .ethos-inner, .upper-photos-inner, .lower-photos-inner{
+    .ethos-inner{
       grid-template-columns: repeat(1,1fr);
       gap: 20px;
     }
